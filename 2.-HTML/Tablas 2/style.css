@@ -1,0 +1,8 @@
+table{
+    text-align: center;
+    border-color: rgba(255, 0, 0, 0.555);
+}
+
+th{
+    background-color: aliceblue;
+}
