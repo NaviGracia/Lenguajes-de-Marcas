@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Formulario</title>
+    <script>
+        function testForm() {
+            alert(document.getElementById('name').value + " " + document)
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="return testForm()">
+        <h2>Formulario</h2>
+            <div>
+                <label for="name">Name:</label>
+                <input id="name" name="name" type="text">
+            </div>
+        <h2>Radio Button</h2>
+        <fieldset>
+            <div>
+                <input type="radio" id="male" name="male" value="male" checked/>
+                <label for="male">Male</label>
+              </div>
+              <div>
+                <input type="radio" id="female" name="female" value="female" />
+                <label for="female">Female</label>
+              </div>
+              <div>
+                <input type="radio" id="other" name="other" value="other" />
+                <label for="other">Other</label>
+            </div>
+        </fieldset>
+        <h2>Selector de Opciones</h2>
+            <div>
+                <label for="select">Marca de Coche:</label>
+                <select name="select" id="select">
+                <option value="Volvo">Volvo</option>
+                <option value="BMW">BMW</option>
+                <option value="Mercedes">Mercedes</option>
+                </select>
+            </div>
+        <h2>Área de Texto</h2>
+            <div>
+                <textarea name="textarea" placeholder="Texto inicial dentro del campo" id="textarea" cols="60" rows="10"></textarea>
+            </div>
+        <h2>Contraseña</h2>
+            <div>
+                <label for="pass">Keyword</label>
+                <input id="pass" type="password">
+            </div>
+        <h2>Checkbox</h2>
+            <div>
+                <p>Elige cuál es tu vehículo</p>
+                <input id="bici" type="checkbox">
+                <label for="bici">Tengo una bici</label>
+                <br>
+                <input id="coche" type="checkbox">
+                <label for="coche">Tengo un coche</label>
+                <br>
+                <input id="moto" type="checkbox">
+                <label for="moto">Tengo una moto</label>
+            </div>
+        <h2>Subida de Archivo</h2>
+            <div>
+                <label for="file">Selecciona el/los archivo/s a subir:</label>
+                <input id="file" type="file">
+            </div>
+            <br>
+        <div>
+            <input id="submit" value="Enviar el Formulario" type="submit">
+        </div>
+    </form>
+</body>
+</html>
