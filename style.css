@@ -1,3 +1,18 @@
 html{
     background-image: url("Fondo/peakpx.jpg");
 }
+
+div.fondito{
+    border: 1px solid rgb(24, 8, 245);
+    width: 40%;
+    background-color: rgba(197, 197, 197, 0.664);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
