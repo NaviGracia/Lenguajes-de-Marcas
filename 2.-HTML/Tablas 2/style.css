@@ -1,8 +1,54 @@
 table{
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     border-color: rgba(255, 0, 0, 0.555);
 }
 
 th{
     background-color: aliceblue;
+}
+
+tr.row1{
+    background-color: bisque;
+}
+
+td.hora{
+    background-color: gainsboro;
+}
+
+td.ED{
+    background-color: whitesmoke;
+}
+
+td.IT{
+    background-color: cornsilk;
+}
+
+td.P{
+    background-color: azure;
+}
+
+td.SI{
+    background-color: aquamarine;
+}
+
+td.BD{
+    background-color: coral;
+}
+
+td.PRD{
+    background-color: darkgray;
+}
+
+td.FOL{
+    background-color: honeydew;
+}
+
+td.T{
+    background-color: salmon;
+}
+
+td.LM{
+    background-color: thistle;
 }
