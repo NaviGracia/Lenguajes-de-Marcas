@@ -19,6 +19,10 @@ div.fondito{
     border-bottom-left-radius: 20px;
 }
 
+div.fondito:hover{
+    border-top-right-radius: 50%;
+}
+
 a{
     color: blue;
 }
