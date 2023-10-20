@@ -8,13 +8,26 @@ h1{
 }
 
 div.fondito{
+    position: relative;
+    z-index: 2;
     border: 1px solid rgb(24, 8, 245);
-    width: 300px;
+    width: 400px;
     background-color: rgba(197, 197, 197, 0.664);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+}
+
+a{
+    color: blue;
+}
+
+a:hover{
+    position: relative;
+    left: 5%;
+    color:red;
+    background-color: azure;
 }
 
 .area{
@@ -24,6 +37,7 @@ div.fondito{
 
 .circles{
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
