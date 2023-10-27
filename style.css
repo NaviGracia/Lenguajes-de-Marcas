@@ -10,28 +10,48 @@ html{
 }
 
 #titulo:hover{
+    position: relative;
     color: white;
     background-color: black;
     border-radius: 45%;
 }
 
-div.fondito{
+div.html{
     position: relative;
     z-index: 2;
     border: 1px solid rgb(24, 8, 245);
     width: 400px;
     background-color: rgba(197, 197, 197, 0.664);
     border-radius: 20px;
+    display: inline-block;
 }
 
-div.fondito:hover{
+div.html:hover{
     border-top-right-radius: 50%;
     border-bottom-left-radius: 15%;
     border-bottom-right-radius: 0%;
     border-top-left-radius: 0%;
+    border-color: red;
 }
 
+div.css{
+    position: relative;
+    z-index: 2;
+    border: 1px solid rgb(24, 8, 245);
+    width: 400px;
+    background-color: rgba(197, 197, 197, 0.664);
+    border-radius: 20px;
+    display: inline-block;
+}
 
+div.css:hover{
+    border-color: red;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 0%;
+    border-top-left-radius: 0%;
+    box-shadow: 15px 5px 10px #ff881844;
+}
 
 a{
     color: blue;
@@ -149,7 +169,7 @@ a:hover{
     }
     100%{
         transform: translateY(0px) rotate(200deg);
-        opacity:  0.3;
+        opacity:  0.8;
     }
 }
 
