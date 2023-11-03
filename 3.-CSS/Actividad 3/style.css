@@ -1,0 +1,14 @@
+div{
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.432);
+    background-color: rgba(128, 128, 128, 0.295);
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+#float{
+    float: right;
+}
