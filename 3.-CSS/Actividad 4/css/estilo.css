@@ -13,17 +13,20 @@ img { border: none; }
 #contenedor {
   width: 90%;
   max-width: 900px;
-  width: auto;
   margin: 0 auto;
 }
 
-#cabecera { clear: both; padding: 1em; }
-#menu { clear: both; padding: 1em; margin: 0px 0px 0.5em 0px; border-bottom: 1px solid #004c99; }
+#cabecera, #menu, #lateral, #contenido, #contenido #principal, #contenido #secundario, #pie {
+  border: 2px solid #777;
+}
+
+#cabecera { clear: both; }
+#menu { clear: both; }
 #lateral { float: left; width: 20%; }
 #contenido { float: right; width: 78%; }
 #contenido #principal { float: left; width: 78%; }
 #contenido #secundario { float: right; width: 20%; }
-#pie { clear: both; padding: 0.5em 0px 0.5em 0px; }
+#pie { clear: both; }
 
 /*-- Cabecera --------------------------------------------------------*/
 #cabecera #logo { float: left; }
@@ -43,14 +46,47 @@ img { border: none; }
    A partir de aqu�, se pueden a�adir todos los estilos propios que 
    sean necesarios.
    ================================================================== */
-#noticias{
-  border: 1px solid #c5c5c5;
-}
+   #cabecera, #menu, #lateral, #contenido, #contenido #principal, #contenido #secundario, #pie{
+    border: 0cm;
+   }
 
-#noticias, #publicidad, #principal, #secundario{
-  padding: 0.5em;
-}
+   #cabecera{
+    padding: 1em;
+   }
 
-.articulo{
-  margin: 1em;
-}
+   #menu{
+    padding: 0.5em;
+    margin: 0 0 1px 0;
+    border-bottom: 1px solid #004C99;
+   }
+
+   #noticias{
+    border: 1px solid #c5c5c5;
+  }
+  
+  #noticias, #publicidad, #principal, #secundario{
+    padding: 0.5em;
+  }
+
+  #pie{
+    padding: 0.5em 0px 0.5em 0px;
+  }
+  
+  .articulo{
+    margin: 1em;/*Preguntar si separción se refiere al margen*/
+  }
+
+  div.articulo img{
+    margin: 0.5em;
+  }
+
+  #publicidad{
+    margin: 1em 0 0 0;/*Misma duda que arriba*/
+    border: 1px solid #CC6600;
+    border-style: dashed;
+  }
+
+  #secundario{
+    border: 1px solid #C5C5C5;
+  }
+  
