@@ -76,7 +76,7 @@ img { border: none; }
   }
   
   .articulo{
-    margin: 1em;/*Preguntar si separación se refiere al margen*/
+    margin: 1em;
   }
 
   div.articulo img{
@@ -84,7 +84,7 @@ img { border: none; }
   }
 
   #publicidad{
-    margin: 1em 0 0 0;/*Misma duda que arriba*/
+    margin: 1em 0 0 0;
     border: 1px solid #CC6600;
     border-style: dashed;
   }

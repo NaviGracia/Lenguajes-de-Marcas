@@ -1,19 +1,14 @@
 html{
-    background-image: url("img/peakpx.jpg");
+    background-image: url("img/sukuna1.jpg");
+    background-size: cover;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #titulo{
+    color: whitesmoke;
     text-align: center;
     position: relative;
     z-index: 3;
-}
-
-#titulo:hover{
-    position: relative;
-    color: white;
-    background-color: black;
-    border-radius: 45%;
 }
 
 div.html{
@@ -32,6 +27,10 @@ div.html:hover{
     border-bottom-right-radius: 0%;
     border-top-left-radius: 0%;
     border-color: red;
+}
+
+.subtitulos{
+    color: whitesmoke;
 }
 
 div.css{
@@ -134,10 +133,11 @@ a:hover{
 
 .circles li:nth-child(7){
     width: 15px;
-    height: 15px;
+    height: 950px;
     left: 25%;
-    background-color: mediumspringgreen;
-    animation-duration: 7.3s;
+    border-radius: 90%;
+    background-color: #c83400;
+    animation-duration: 9s;
 }
 
 .circles li:nth-child(8){
@@ -163,12 +163,12 @@ a:hover{
 
 @keyframes animationSQ{
     0%{
-        transform: translateY(-1000px) rotate(32deg);
+        transform: translateY(-1000px) rotate(0deg);
         opacity: 1;
         border-radius: 50%;
     }
     100%{
-        transform: translateY(0px) rotate(200deg);
+        transform: translateY(0px) rotate(0deg);
         opacity:  0.8;
     }
 }
