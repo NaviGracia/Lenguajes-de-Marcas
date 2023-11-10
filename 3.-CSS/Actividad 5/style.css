@@ -1,0 +1,45 @@
+ul, ol {
+    list-style:none;
+}
+
+.sinborde{
+    float: left;
+}
+
+.nav li.borde-vertical {
+    float:left;
+}
+
+.borde-vertical{
+    border-right: 1px solid rgb(34, 148, 255);
+}
+
+.borde-horizontal{
+    border-bottom: 1px solid rgb(34, 148, 255);
+}
+
+.nav li a {
+    background-color:#c5c5c5;
+    color:rgb(34, 148, 255);
+    text-decoration:none;
+    padding:10px 12px;
+    display:inline-block;
+}
+
+.nav li a:hover {
+    color: black;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:100px;
+}
+
+.nav li:hover > ul{
+    display: block;
+}
+
+.nav li ul li {
+    position:relative; 
+}
