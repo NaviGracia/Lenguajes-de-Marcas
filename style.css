@@ -84,6 +84,123 @@ a:hover{
     list-style: none;
     width: 15px;
     height: 15px;
+    bottom: -150px;
+    animation: animationSQ 25s infinite linear;
+}
+
+.circles li:nth-child(1){
+    width: 15px;
+    height: 1000px;
+    left: 77%;
+    position: relative;
+    bottom: 200px;
+    background-color: #B82928;
+}
+
+@keyframes animationSQ{
+    0%{
+        transform: translateY(-1000px) rotate(0deg);
+        opacity: 1;
+        border-radius: 50%;
+    }
+    100%{
+        transform: translateY(0px) rotate(0deg);
+        opacity:  0.8;
+    }
+}
+
+/*
+- Lava Cayendo
+- rejas de fuego con partículas
+*/
+
+/*
+html{
+    background-image: url("img/sukuna1.jpg");
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#titulo{
+    color: whitesmoke;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+div.html{
+    position: relative;
+    z-index: 2;
+    border: 1px solid rgb(24, 8, 245);
+    width: 400px;
+    background-color: rgba(197, 197, 197, 0.664);
+    border-radius: 20px;
+    display: inline-block;
+}
+
+div.html:hover{
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 0%;
+    border-top-left-radius: 0%;
+    border-color: red;
+}
+
+.subtitulos{
+    color: whitesmoke;
+}
+
+div.css{
+    position: relative;
+    z-index: 2;
+    border: 1px solid rgb(24, 8, 245);
+    width: 400px;
+    background-color: rgba(197, 197, 197, 0.664);
+    border-radius: 20px;
+    display: inline-block;
+}
+
+div.css:hover{
+    border-color: red;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 0%;
+    border-top-left-radius: 0%;
+    box-shadow: 15px 5px 10px #ff881844;
+}
+
+a{
+    color: blue;
+}
+
+a:hover{
+    position: relative;
+    left: 5%;
+    color:red;
+    background-color: azure;
+}
+
+.area{
+    height: 100vh;
+    width: 100%;
+}
+
+.circles{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 15px;
+    height: 15px;
     animation: animationSQ 25s infinite linear;
     bottom: -150px;
 }
@@ -177,4 +294,6 @@ a:hover{
 /*
 - Lava Cayendo
 - rejas de fuego con partículas
+*/
+
 */
