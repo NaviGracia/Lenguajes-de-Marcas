@@ -91,7 +91,6 @@ a:hover{
     height: 100vh;
     left: 20%;
     background-color: #B82928;
-    animation: animationSQ 25s infinite linear;
 }
 
 .rejas li:nth-child(2){
@@ -102,34 +101,55 @@ a:hover{
 }
 
 .particulas{
-    position: absolute;
+    position: relative;
     display: block;
     list-style: none;
     width: 100%;
     height: 100%;
     overflow: hidden;
     z-index: 0;
+    animation: animationSQ 25s infinite linear;
 }
 
 .particulas li:first-child{
     width: 5px;
     height: 5px;
     left: 25%;
+    bottom: 100px;
+    border-radius: 100%;
     background-color: #B82928;
 }
 
+<ul class="">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
 @keyframes animationSQ{
     0%{
-        transform: translateY(-1000px) rotate(0deg);
+        transform: translateY(0px) rotate(0deg);
         opacity: 1;
-        border-radius: 50%;
     }
     100%{
-        transform: translateY(0px) rotate(0deg);
+        transform: translateY(900px) rotate(0deg);
         opacity:  0.8;
     }
 }
-
+/*
+@keyframes lavaFlowCol1{
+    0%{
+        transform: translateX(20px) translateY(10px);
+    }
+    50%{
+        transform: translateX(100px) translateY(60px);
+    }
+    100%{
+        transform: translateX(150px) translateY(10px);
+    }
+}
+*/
 
 /*
 - Lava Cayendo
