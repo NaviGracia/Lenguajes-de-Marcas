@@ -68,7 +68,7 @@ a:hover{
     width: 100%;
 }
 
-.circles{
+.rejas{
     position: absolute;
     z-index: 1;
     top: 0;
@@ -78,204 +78,44 @@ a:hover{
     overflow: hidden;
 }
 
-.circles li{
+.rejas li{
     position: absolute;
     display: block;
     list-style: none;
+    /*animation: animationSQ 25s infinite linear;
+    bottom: -150px;*/
+}
+
+.rejas li:nth-child(1){
     width: 15px;
-    height: 15px;
-    bottom: -150px;
-    animation: animationSQ 25s infinite linear;
-}
-
-.circles li:nth-child(1){
-    width: 15px;
-    height: 1000px;
-    left: 77%;
-    position: relative;
-    bottom: 200px;
-    background-color: #B82928;
-}
-
-@keyframes animationSQ{
-    0%{
-        transform: translateY(-1000px) rotate(0deg);
-        opacity: 1;
-        border-radius: 50%;
-    }
-    100%{
-        transform: translateY(0px) rotate(0deg);
-        opacity:  0.8;
-    }
-}
-
-/*
-- Lava Cayendo
-- rejas de fuego con partículas
-*/
-
-/*
-html{
-    background-image: url("img/sukuna1.jpg");
-    background-size: cover;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-#titulo{
-    color: whitesmoke;
-    text-align: center;
-    position: relative;
-    z-index: 3;
-}
-
-div.html{
-    position: relative;
-    z-index: 2;
-    border: 1px solid rgb(24, 8, 245);
-    width: 400px;
-    background-color: rgba(197, 197, 197, 0.664);
-    border-radius: 20px;
-    display: inline-block;
-}
-
-div.html:hover{
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 15%;
-    border-bottom-right-radius: 0%;
-    border-top-left-radius: 0%;
-    border-color: red;
-}
-
-.subtitulos{
-    color: whitesmoke;
-}
-
-div.css{
-    position: relative;
-    z-index: 2;
-    border: 1px solid rgb(24, 8, 245);
-    width: 400px;
-    background-color: rgba(197, 197, 197, 0.664);
-    border-radius: 20px;
-    display: inline-block;
-}
-
-div.css:hover{
-    border-color: red;
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 15%;
-    border-bottom-right-radius: 0%;
-    border-top-left-radius: 0%;
-    box-shadow: 15px 5px 10px #ff881844;
-}
-
-a{
-    color: blue;
-}
-
-a:hover{
-    position: relative;
-    left: 5%;
-    color:red;
-    background-color: azure;
-}
-
-.area{
     height: 100vh;
-    width: 100%;
+    left: 20%;
+    background-color: #B82928;
+    animation: animationSQ 25s infinite linear;
 }
 
-.circles{
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+.rejas li:nth-child(2){
+    width: 15px;
+    height: 100vh;
+    left: 75%;
+    background-color: #B82928;
 }
 
-.circles li{
+.particulas{
     position: absolute;
     display: block;
     list-style: none;
-    width: 15px;
-    height: 15px;
-    animation: animationSQ 25s infinite linear;
-    bottom: -150px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
 }
 
-.circles li:nth-child(1){
-    width: 15px;
-    height: 15px;
-    left: 50%;
-    animation-duration: 7s;
-}
-
-.circles li:nth-child(2){
-    width: 15px;
-    height: 15px;
-    left: 70%;
-    animation-duration: 9s;
-}
-
-.circles li:nth-child(3){
-    width: 15px;
-    height: 15px;
-    left: 60%;
-    animation-duration: 8s;
-}
-
-.circles li:nth-child(4){
-    width: 15px;
-    height: 15px;
-    left: 77%;
-    background-color: #B82928;
-    animation-duration: 8s;
-}
-
-.circles li:nth-child(5){
-    width: 15px;
-    height: 15px;
-    left: 33%;
-    animation-duration: 9s;
-}
-
-.circles li:nth-child(6){
-    width: 15px;
-    height: 15px;
-    left: 40%;
-    animation-duration: 8.3s;
-}
-
-.circles li:nth-child(7){
-    width: 15px;
-    height: 950px;
+.particulas li:first-child{
+    width: 5px;
+    height: 5px;
     left: 25%;
-    border-radius: 90%;
-    background-color: #c83400;
-    animation-duration: 9s;
-}
-
-.circles li:nth-child(8){
-    width: 15px;
-    height: 15px;
-    left: 20%;
-    animation-duration: 7.5s;
-}
-
-.circles li:nth-child(9){
-    width: 15px;
-    height: 15px;
-    left: 35%;
-    animation-duration: 8.2s;
-}
-
-.circles li:nth-child(10){
-    width: 15px;
-    height: 15px;
-    left: 15%;
-    animation-duration: 7.7s;
+    background-color: #B82928;
 }
 
 @keyframes animationSQ{
@@ -293,7 +133,5 @@ a:hover{
 
 /*
 - Lava Cayendo
-- rejas de fuego con partículas
-*/
-
+- .rejas de fuego con partículas
 */

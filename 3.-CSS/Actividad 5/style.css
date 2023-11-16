@@ -2,20 +2,13 @@ ul, ol {
     list-style:none;
 }
 
-.sinborde{
-    float: left;
-}
-
-.nav li.borde-vertical {
+.nav li {
     float:left;
-}
-
-.borde-vertical{
     border-right: 1px solid rgb(34, 148, 255);
 }
 
-.borde-horizontal{
-    border-bottom: 1px solid rgb(34, 148, 255);
+.nav li:last-child{
+    border: initial;
 }
 
 .nav li a {
@@ -26,20 +19,32 @@ ul, ol {
     display:inline-block;
 }
 
+.nav li ul li a{
+    width: 93px;
+}
+
 .nav li a:hover {
     color: black;
+    font-weight: bold;
 }
 
 .nav li ul {
     display:none;
     position:absolute;
-    min-width:100px;
+}
+
+.nav li ul li{
+    float: none;
+    border: initial;
+    font-weight: initial;
+    position: relative;
+    border-bottom: 1px solid rgb(34, 148, 255);
+}
+
+.nav li ul li:last-child{
+    border: none;
 }
 
 .nav li:hover > ul{
     display: block;
-}
-
-.nav li ul li {
-    position:relative; 
 }
