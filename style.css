@@ -11,6 +11,10 @@ html{
     z-index: 3;
 }
 
+div div{
+    float: left;
+}
+
 div.html{
     position: relative;
     z-index: 2;
@@ -41,9 +45,30 @@ div.css{
     background-color: rgba(197, 197, 197, 0.664);
     border-radius: 20px;
     display: inline-block;
+    
 }
 
 div.css:hover{
+    border-color: red;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 0%;
+    border-top-left-radius: 0%;
+    box-shadow: 15px 5px 10px #ff881844;
+}
+
+div.rwd{
+    position: relative;
+    z-index: 2;
+    border: 1px solid rgb(24, 8, 245);
+    width: 400px;
+    background-color: rgba(197, 197, 197, 0.664);
+    border-radius: 20px;
+    display: inline-block;
+    
+}
+
+div.rwd:hover{
     border-color: red;
     border-top-right-radius: 50%;
     border-bottom-left-radius: 15%;
@@ -120,13 +145,6 @@ a:hover{
     background-color: #B82928;
 }
 
-<ul class="">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-
 @keyframes animationSQ{
     0%{
         transform: translateY(0px) rotate(0deg);
@@ -155,3 +173,23 @@ a:hover{
 - Lava Cayendo
 - .rejas de fuego con partículas
 */
+
+@media only screen and (max-width: 768px){
+    #titulo{
+        font-size: 25px;
+    }
+    
+    div.html{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    div.css{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    div.rwd{
+        width: 100%;
+    }
+}

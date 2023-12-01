@@ -1,0 +1,68 @@
+#cabecera{
+    background-color: black;
+    border: none;
+}
+
+.objeto_menu{
+    background-color: rgba(204, 156, 0, 0.959);
+    height: 75vh;
+    width: 119px;
+    float: left;
+    border: 1px solid rgba(204, 156, 0, 0.959);/*Revisar*/
+}
+
+.elementos_menu{
+    text-align: left;
+    padding: 10px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    padding: 7px 0px;
+    border-bottom: 1px solid black;
+}
+
+.elementos_menu li ul{
+    display: none;
+    position: absolute;
+}
+
+li ul li{
+    padding: 7px 7px;
+    float: none;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+li:visited{
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.63);
+}
+
+li:hover > ul{
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    background-color: rgba(204, 156, 0, 0.959);
+}
+
+.contenido{
+    position: relative;
+    left: 120px;
+    margin: 30px;
+    width: 880px;
+    height: auto;
+}
+
+h1{
+    font-weight: normal;
+    text-align: center;
+}
