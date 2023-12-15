@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vehiculo>
+    <marca>Mercedes</marca>
+    <modelo>CLE</modelo>
+    <motor>
+        <tipo>gasolina</tipo>
+        <potencia>220 CV</potencia>
+    </motor>
+    <color>Blanco</color>
+</vehiculo>

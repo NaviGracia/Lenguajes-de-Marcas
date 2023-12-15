@@ -77,6 +77,26 @@ div.rwd:hover{
     box-shadow: 15px 5px 10px #ff881844;
 }
 
+div.xml{
+    position: relative;
+    z-index: 2;
+    border: 1px solid rgb(24, 8, 245);
+    width: 400px;
+    background-color: rgba(197, 197, 197, 0.664);
+    border-radius: 20px;
+    display: inline-block;
+    
+}
+
+div.xml:hover{
+    border-color: red;
+    border-top-right-radius: 40%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 20%;
+    border-top-left-radius: 0%;
+    box-shadow: 15px 5px 10px #ff881844;
+}
+
 a{
     color: blue;
 }
