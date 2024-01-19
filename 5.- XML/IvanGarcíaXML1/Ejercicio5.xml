@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vehiculos>
+    <terrestres>
+        <tipo>terrestre</tipo>
+        <nombre>bicicleta</nombre>
+        <nombre>coche</nombre>
+        <nombre>tractor</nombre>
+    </terrestres>
+    <acuaticos>
+        <tipo>acuático</tipo>
+        <nombre>canoa</nombre>
+    </acuaticos>
+    <aereos>
+        <tipo>aereos</tipo>
+        <nombre>avioneta</nombre>
+        <nombre>helicóptero</nombre>
+    </aereos>
+</vehiculos>
+
+<!-- 
+<vehiculos>
+    <vehiculo tipo="terrestre">
+        <nombre>bicicleta</nombre>
+    </vehiculo>
+    <vehiculo tipo="acuático">
+        <nombre>canoa</nombre>
+    </vehiculo>
+    <vehiculo tipo="aereo">
+        <nombre>avioneta</nombre>
+    </vehiculo>
+    <vehiculo tipo="aereo - acuatico">
+        <nombre>hidroavión</nombre>
+    </vehiculo>
+</vehiculos>
+-->

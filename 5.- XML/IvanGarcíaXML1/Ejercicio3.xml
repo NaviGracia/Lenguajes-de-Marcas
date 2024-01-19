@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="css/ejercicio3.css" type="text/css"?>
+
+<articulos>
+    <articulo>
+        <nombre>Sofá</nombre>
+        <precio>642</precio>
+    </articulo>
+    <articulo>
+        <nombre>Mesa</nombre>
+        <precio>305</precio>
+    </articulo>
+    <articulo>
+        <nombre>Lámpara</nombre>
+        <precio>89</precio>
+    </articulo>
+</articulos>
+<!-- 
+<articulos>
+    <precio_productos>
+        <precio>642</precio>
+        <productos>
+            <nombre>Sofá</nombre>
+        </productos>
+        <nombre>Lámpara</nombre>
+    </precio_productos>
+    <precio_productos>
+        <precio>305</precio>
+        <productos>
+            <nombre>Mesa</nombre>
+        </productos>
+    </precio_productos>
+    <precio_productos>
+        <precio>89</precio>
+        <productos>
+            <nombre>Lámpara</nombre>
+        </productos>
+    </precio_productos>
+</articulos>
+-->

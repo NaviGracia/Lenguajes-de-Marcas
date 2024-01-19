@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="css/ejercicio4.css" type="text/css"?>
+
+<mezcla_de_colores>
+    <mezla_color resultado="naranja">
+        <color>rojo</color>
+        <color>amarillo</color>
+    </mezla_color>
+    <mezla_color resultado="gris">
+        <color>negro</color>
+        <color>blanco</color>
+    </mezla_color>
+    <mezla_color resultado="verde claro">
+        <color>amarillo</color>
+        <color>azul</color>
+        <color>blanco</color>
+    </mezla_color>
+</mezcla_de_colores>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<arboleda>
+    <especie>
+        <nombre_científico vegetacion="Caducifolio">Acer monspessulanum</nombre_científico>
+        <nombre_comun>Arce de Montpellier, Arce Menor</nombre_comun>
+        <altura>De 20 a 25 metros</altura>
+        <forma_estructura>Copa ovoidal. Tronco principal recto con bifurcaciones. Ramaje colgante.</forma_estructura>Copa ovoidal. 
+        <color_primavera>Haz verde brillante, envés verde blanquecino</color_primavera>
+        <resistencia_frio>Heladas fuertes (hasta -15ºC)</resistencia_frio>
+    </especie>
+    <especie>
+        <nombre_científico vegetacion="Perenne">Olea europea</nombre_científico> <!-- Atributo de búsqueda-->
+        <nombre_comun>Olivo</nombre_comun>
+        <altura>De 8 a 15 metros</altura>
+        <forma_estructura>Copa irregular. Tronco principal irregular con bifurcaciones. Ramaje tortuoso </forma_estructura>Copa ovoidal. 
+        <color_primavera>Haz verde oscuro, envés verde plateado</color_primavera>
+        <resistencia_frio>Heladas medias (hasta -10ºC)</resistencia_frio>
+    </especie>
+    <especie>
+        <nombre_científico vegetacion="Caducifolio">Platanus orientalis</nombre_científico>
+        <nombre_comun>Platano</nombre_comun>
+        <altura>De 20 a 25 metros</altura>
+        <forma_estructura>Copa ovoidal. Tronco principal recto. Ramaje expandido.</forma_estructura>Copa ovoidal. 
+        <color_primavera>Haz verde medio, envés verde claro</color_primavera>
+        <resistencia_frio>Heladas fuertes (hasta -20ºC)</resistencia_frio>
+    </especie>
+    <especie>
+        <nombre_científico vegetacion="Perenne">Quercus ilex</nombre_científico>
+        <nombre_comun>Encina</nombre_comun>
+        <altura>En torno a 25 metros</altura>
+        <forma_estructura>Copa esférica o elíptica irregular. Tronco principal recto. Ramaje tortuoso.</forma_estructura>Copa ovoidal. 
+        <color_primavera>Plateado en hojas jóvenes. En hojas antiguas, haz verde oscuro, envés plateado</color_primavera>
+        <resistencia_frio>Heladas fuertes (hasta -15ºC)</resistencia_frio>
+    </especie>
+</arboleda>
