@@ -4,8 +4,9 @@
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="ciudad" type="xs:string"/>
-                <xs:element name="fefcha-de-nacimiento" type="xs:date"/>
+                <xs:element name="fecha-de-nacimiento" type="xs:date"/>
                 <xs:element name="hora" type="xs:time"/>
+                <xs:element name="nota" type="xs:float"/>
                 <xs:element name="apto" type="xs:boolean"/>
                 <xs:element name="puertaAbierta" type="xs:boolean" default="true"/>
                 <xs:element name="ventanaCerrada" type="xs:boolean" fixed="false"/>
