@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="cantidad">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="1000"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="heladeria">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="helado" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:choice>
+                                <xs:element name="chocolate" type="cantidad"/>
+                                <xs:element name="fresa" type="cantidad"/>
+                            </xs:choice>
+                            <xs:choice>
+                                <xs:element name="vainilla" type="cantidad"/>
+                                <xs:element name="turron" type="cantidad"/>
+                                <xs:element name="nata" type="cantidad"/>
+                            </xs:choice>
+                        </xs:sequence>
+                        <xs:attribute name="fabricacion" type="xs:date"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
