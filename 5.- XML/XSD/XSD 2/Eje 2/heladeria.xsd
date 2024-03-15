@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+ de cara<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:simpleType name="cantidad">
         <xs:restriction base="xs:int">
