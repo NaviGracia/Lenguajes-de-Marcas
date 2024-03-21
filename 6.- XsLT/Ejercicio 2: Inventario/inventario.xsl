@@ -4,8 +4,14 @@
     <xsl:template match="/">
         <html>
             <head>
-                <title
+                <title>Ejercicio Inventario</title>
             </head>
+            <body>
+                <ul>
+                    <li>xsl:value-of</li>
+
+                </ul>
+            </body>
         </html>
     </xsl:template>
 
