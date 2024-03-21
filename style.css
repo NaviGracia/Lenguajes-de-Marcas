@@ -113,56 +113,44 @@ a:hover{
     width: 100%;
 }
 
-.rejas{
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.rejas li{
-    position: absolute;
-    display: block;
-    list-style: none;
-    /*animation: animationSQ 25s infinite linear;
-    bottom: -150px;*/
-}
-
-.rejas li:nth-child(1){
-    width: 15px;
-    height: 100vh;
-    left: 20%;
-    background-color: #B82928;
-}
-
-.rejas li:nth-child(2){
-    width: 15px;
-    height: 100vh;
-    left: 75%;
-    background-color: #B82928;
-}
-
 .particulas{
-    position: relative;
     display: block;
+    position: relative;
     list-style: none;
     width: 100%;
     height: 100%;
     overflow: hidden;
     z-index: 0;
-    animation: animationSQ 25s infinite linear;
 }
 
 .particulas li:first-child{
-    width: 5px;
-    height: 5px;
-    left: 25%;
+    position: relative;
+    left: 10%;
+    width: 10px;
+    height: 10px;
     bottom: 100px;
     border-radius: 100%;
-    background-color: #B82928;
+    background-color: #ff0000;
+    z-index: 5;
+    animation: animationSQ 25s infinite linear;
+}
+
+.particulas li:nth-child(2){
+    width: 10px;
+    height: 10px;
+    bottom: 100px;
+    border-radius: 100%;
+    background-color: #ff0000;
+    animation: animationSQ 20s infinite linear;
+}
+
+.particulas li:nth-child(3){
+    width: 12px;
+    height: 12px;
+    bottom: 100px;
+    border-radius: 100%;
+    background-color: #ff0000;
+    animation: animationSQ 20s infinite linear;
 }
 
 @keyframes animationSQ{
@@ -175,19 +163,6 @@ a:hover{
         opacity:  0.8;
     }
 }
-/*
-@keyframes lavaFlowCol1{
-    0%{
-        transform: translateX(20px) translateY(10px);
-    }
-    50%{
-        transform: translateX(100px) translateY(60px);
-    }
-    100%{
-        transform: translateX(150px) translateY(10px);
-    }
-}
-*/
 
 /*
 - Lava Cayendo
