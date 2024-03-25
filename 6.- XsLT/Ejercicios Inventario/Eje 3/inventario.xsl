@@ -1,38 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-    <xsl:output method="html" encoding="UTF-8"/>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:output method="html"/>
     <xsl:template match="/">
         <html>
             <head>
                 <title>Ejercicio Inventario</title>
             </head>
             <body>
-                <h3>Mostrando productos con peso inferior a 7kg</h3>
-                <xsl:choose>
-                </xsl:choose>
+                <h4>Mostrando productos con peso inferior a 7kg</h4>
                 <xsl:for-each select="inventario/producto">
-                    <xsl:if test="peso/@unidad='kg'">
-                        <xsl:if test="peso &lt; 7">
-                            <ul>
-                                <li>
-                                    <xsl:value-of select="@codigo"/>
-                                    <ul>
-                                        <li>
-                                            <p>Nombre: <xsl:value-of select="nombre"/></p>
-                                        </li>
-                                        <li>
-                                            <p>Peso: <xsl:value-of select="peso"/> <xsl:value-of select="peso/@unidad"/></p>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </xsl:if>
-                    </xsl:if>
+                    <xsl:choose>
+                        <xsl:when test="peso/@unidad='kg'">
+                            <xsl:if test="peso &lt; 7">
+                                <p><xsl:value-of select="nombre"/></p>
+                                <ul>
+                                    <li>
+                                        <p>Peso: <xsl:value-of select="peso"/><xsl:value-of select="peso/@unidad"/></p>                        
+                                    </li>
+                                    <li>
+                                        <p>Edificio: <xsl:value-of select="lugar/@edificio"/></p>                        
+                                    </li>
+                                    <li>
+                                        <p>Aula: <xsl:value-of select="lugar/aula"/></p>                        
+                                    </li>
+                                </ul>
+                            </xsl:if>
+                        </xsl:when>
+                        <xsl:when test="peso/@unidad='g'">
+                            <xsl:if test="peso &lt; 7000">
+                                <p><xsl:value-of select="nombre"/></p>
+                                <ul>
+                                    <li>
+                                        <p>Peso: <xsl:value-of select="peso"/><xsl:value-of select="peso/@unidad"/></p>                        
+                                    </li>
+                                    <li>
+                                        <p>Edificio: <xsl:value-of select="lugar/@edificio"/></p>                        
+                                    </li>
+                                    <li>
+                                        <p>Aula: <xsl:value-of select="lugar/aula"/></p>                        
+                                    </li>
+                                </ul>
+                            </xsl:if>
+                        </xsl:when>
+                    </xsl:choose>
                 </xsl:for-each>
             </body>
         </html>
     </xsl:template>
-
-    peso/@unidad='g'
-
 </xsl:stylesheet>
