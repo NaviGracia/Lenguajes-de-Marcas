@@ -7,16 +7,14 @@
                 <title>Ejercicio Inventario</title>
             </head>
             <body>
-                <h1>Resultados</h1>
-                <table border="1">
+                <h4>Mostrando Prductos del aula 6</h4>
+                <ul>
                     <xsl:for-each select="inventario/producto">
-                        <tr>
-                            <td><xsl:value-of select="nombre"/></td>
-                            <td><xsl:value-of select="peso"/></td>
-                            <td><xsl:value-of select="lugar/@edificio"/><xsl:value-of select="lugar/aula"/></td>
-                        </tr>
+                        <xsl:if test="lugar/aula='6'">
+                                <li><xsl:value-of select="nombre"/></li>
+                        </xsl:if>
                     </xsl:for-each>
-                </table>
+                </ul>
             </body>
         </html>
     </xsl:template>
