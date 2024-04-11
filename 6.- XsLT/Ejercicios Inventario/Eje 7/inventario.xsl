@@ -7,7 +7,7 @@
                 <title>Ejercicio Inventario</title>
             </head>
             <body>
-                <h4>Mostrando Prductos del aula 6</h4>
+                <h4>Mostrando Productos del aula 6</h4>
                 <ul>
                     <xsl:for-each select="inventario/producto">
                         <xsl:if test="lugar/aula='6'">

@@ -8,7 +8,7 @@
             </head>
             <body>
                 <table border="1">
-                    <caption>Mostrando productos del efificio A con pesaje menor a 7kg</caption>
+                    <caption>Mostrando productos del edificio A con peso inferior a 7kg</caption>
                     <tr>
                             <td>ID</td>
                             <td>Nombre</td>
