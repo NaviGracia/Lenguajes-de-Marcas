@@ -1,5 +1,5 @@
 html{
-    background-image: url("img/sukuna1.jpg");
+    background-image: url("img/iphone-16-3840x2160-marble-green-25866.jpeg");
     background-size: cover;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -12,7 +12,7 @@ html{
 }
 
 div div{
-    float: left;
+    display: inline-flex;
 }
 
 div.html{
@@ -22,7 +22,6 @@ div.html{
     width: 400px;
     background-color: rgba(197, 197, 197, 0.664);
     border-radius: 20px;
-    display: inline-block;
 }
 
 div.html:hover{
@@ -44,7 +43,6 @@ div.css{
     width: 400px;
     background-color: rgba(197, 197, 197, 0.664);
     border-radius: 20px;
-    display: inline-block;
     
 }
 
@@ -64,8 +62,8 @@ div.rwd{
     width: 400px;
     background-color: rgba(197, 197, 197, 0.664);
     border-radius: 20px;
-    display: inline-block;
-    
+    bottom: -150px;
+   right: 405px; 
 }
 
 div.rwd:hover{
@@ -84,11 +82,30 @@ div.xml{
     width: 400px;
     background-color: rgba(197, 197, 197, 0.664);
     border-radius: 20px;
-    display: inline-block;
-    
+    right: 405px;
 }
 
 div.xml:hover{
+    border-color: red;
+    border-top-right-radius: 40%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 20%;
+    border-top-left-radius: 0%;
+    box-shadow: 15px 5px 10px #ff881844;
+}
+
+div.xslt{
+    position: relative;
+    z-index: 2;
+    border: 1px solid rgb(24, 8, 245);
+    width: 400px;
+    background-color: rgba(197, 197, 197, 0.664);
+    border-radius: 20px;
+    bottom: 680px;
+    left: 1219px;
+}
+
+div.xslt:hover{
     border-color: red;
     border-top-right-radius: 40%;
     border-bottom-left-radius: 10%;
