@@ -12,17 +12,8 @@
                         <xsl:if test="lugar/aula='6'">
                             <h3>Mostrando productos que están en el edificio <xsl:value-of select="lugar/@edificio"/><xsl:value-of select="lugar/aula"/></h3>
                             <ul>
-                                <li>
-                                    <xsl:value-of select="@codigo"/>
-                                    <ul>
-                                        <li>
-                                            <p>Nombre: <xsl:value-of select="nombre"/></p>
-                                        </li>
-                                        <li>
-                                            <p>Peso: <xsl:value-of select="peso"/> <xsl:value-of select="peso/@unidad"/></p>
-                                        </li>
-                                    </ul>
-                                </li>
+                                <xsl:apply-templates select="nombre"/>
+                                <xsl:apply-templates select="peso"/>
                             </ul>
                         </xsl:if>
                     </xsl:if>
@@ -30,7 +21,16 @@
             </body>
         </html>
     </xsl:template>
-
     
-
+    <xsl:template match="//nombre">
+        <li>
+            <p>Nombre: <xsl:value-of select="."/></p>
+        </li>
+    </xsl:template>
+        
+    <xsl:template match="//peso">
+        <li>
+            <p>Peso: <xsl:value-of select="."/> <xsl:value-of select="./@unidad"/></p>
+        </li>
+    </xsl:template>
 </xsl:stylesheet>
