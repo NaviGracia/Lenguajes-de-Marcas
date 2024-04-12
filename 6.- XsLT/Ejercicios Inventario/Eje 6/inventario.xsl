@@ -9,29 +9,29 @@
             <body>
                 <table border="1">
                     <caption>Productos del Edificio B</caption>
-                    <xsl:for-each select="inventario/producto">
-                        <xsl:if test="lugar/@edificio='B'">
-                            <tr>
-                                <td><xsl:value-of select="nombre"/></td>
-                                <td><xsl:value-of select="peso"/></td>
-                                <td><xsl:value-of select="lugar/@edificio"/><xsl:value-of select="lugar/aula"/></td>
-                            </tr>
-                        </xsl:if>
-                    </xsl:for-each>
+                        <xsl:apply-templates select="//producto[lugar/@edificio='B']"/>
                 </table>
                 <table border="1">
                     <caption>Productos del Edificio A</caption>
-                    <xsl:for-each select="inventario/producto">
-                        <xsl:if test="lugar/@edificio='A'">
-                            <tr>
-                                <td><xsl:value-of select="nombre"/></td>
-                                <td><xsl:value-of select="peso"/></td>
-                                <td><xsl:value-of select="lugar/@edificio"/><xsl:value-of select="lugar/aula"/></td>
-                            </tr>
-                        </xsl:if>
-                    </xsl:for-each>
+                    <xsl:apply-templates select="//producto[lugar/@edificio='A']"/>
                 </table>
             </body>
         </html>
+    </xsl:template>
+        
+    <xsl:template match="//producto[lugar/@edificio='B']">
+        <tr>
+            <td><xsl:value-of select="nombre"/></td>
+            <td><xsl:value-of select="peso"/></td>
+            <td><xsl:value-of select="lugar/@edificio"/><xsl:value-of select="lugar/aula"/></td>
+        </tr>
+    </xsl:template>
+
+    <xsl:template match="//producto[lugar/@edificio='A']">
+        <tr>
+            <td><xsl:value-of select="nombre"/></td>
+            <td><xsl:value-of select="peso"/></td>
+            <td><xsl:value-of select="lugar/@edificio"/><xsl:value-of select="lugar/aula"/></td>
+        </tr>
     </xsl:template>
 </xsl:stylesheet>
