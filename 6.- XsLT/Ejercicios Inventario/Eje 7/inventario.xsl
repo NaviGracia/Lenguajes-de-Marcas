@@ -3,12 +3,10 @@
     <xsl:output method="xml"/>
     <xsl:template match="/">
         <inventario>
-            <xsl:for-each select="inventario/producto">
-                <xsl:if test="lugar/aula=6">
-                    <producto>
-                        <nombre><xsl:value-of select="nombre"/></nombre>
-                    </producto>
-                </xsl:if>
+            <xsl:for-each select="//producto[lugar/aula='6']">
+                <producto>
+                    <nombre><xsl:value-of select="nombre"/></nombre>
+                </producto>
             </xsl:for-each>
         </inventario>
     </xsl:template>

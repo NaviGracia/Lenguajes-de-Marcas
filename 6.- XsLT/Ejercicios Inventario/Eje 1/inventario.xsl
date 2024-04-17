@@ -7,16 +7,16 @@
                 <title>Ejercicio Inventario</title>
             </head>
             <body>
-                <xsl:for-each select="inventario/producto">
+                <xsl:for-each select="//producto">
                     <ul>
                         <li>
-                            <xsl:value-of select="@codigo"/>
+                            Producto <xsl:value-of select="@codigo"/>
                             <ul>
                                 <li>
-                                    <p>Nombre: <xsl:value-of select="nombre"/></p>
+                                    Nombre: <xsl:value-of select="nombre"/>
                                 </li>
                                 <li>
-                                    <p>Peso: <xsl:value-of select="peso"/> <xsl:value-of select="peso/@unidad"/></p>
+                                    <xsl:apply-templates select="peso"/>
                                 </li>
                             </ul>
                         </li>
@@ -24,6 +24,9 @@
                 </xsl:for-each>
             </body>
         </html>
+    </xsl:template>
+    <xsl:template match="./peso">
+        Peso: <xsl:value-of select="peso"/> <xsl:value-of select="peso/@unidad"/>
     </xsl:template>
 
     

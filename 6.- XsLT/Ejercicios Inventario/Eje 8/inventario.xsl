@@ -15,31 +15,25 @@
                             <td>Peso</td>
                             <td>Edificio</td>
                     </tr>
-                    <xsl:for-each select="inventario/producto">
-                        <xsl:if test="lugar/@edificio='A'">
+                    <xsl:for-each select="//producto[lugar/@edificio ='A']">
                             <xsl:choose>
-                                <xsl:when test="peso/@unidad='kg'">
-                                    <xsl:if test="peso &lt; 7">
+                                <xsl:when test="(peso/@unidad='kg' and peso &lt; 7)">
                                         <tr>
                                             <td><xsl:value-of select="@codigo"/></td>
                                             <td><xsl:value-of select="nombre"/></td>
                                             <td><xsl:value-of select="peso"/><xsl:value-of select="peso/@unidad"/></td>
                                             <td><xsl:value-of select="lugar/@edificio"/><xsl:value-of select="lugar/aula"/></td>
                                         </tr>
-                                    </xsl:if>
                                 </xsl:when>
-                                <xsl:when test="peso/@unidad='g'">
-                                    <xsl:if test="peso &lt; 7000">
+                                <xsl:when test="(peso/@unidad='g' and peso &lt; 7000)">
                                         <tr>
                                             <td><xsl:value-of select="@codigo"/></td>
                                             <td><xsl:value-of select="nombre"/></td>
                                             <td><xsl:value-of select="peso"/><xsl:value-of select="peso/@unidad"/></td>
                                             <td><xsl:value-of select="lugar/@edificio"/><xsl:value-of select="lugar/aula"/></td>
                                         </tr>
-                                    </xsl:if>
                                 </xsl:when>
                             </xsl:choose>
-                        </xsl:if>
                     </xsl:for-each>
                 </table>
             </body>
