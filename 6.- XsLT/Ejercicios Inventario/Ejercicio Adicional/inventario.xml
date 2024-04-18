@@ -16,7 +16,7 @@
         </lugar>
     </producto>
     <producto codigo="P3">
-        <peso unidad='kg'>15</peso>
+        <peso unidad='kg'>7</peso>
         <nombre>Mesa</nombre>
         <lugar edificio="B">
             <aula>6</aula>
@@ -39,6 +39,20 @@
     <producto codigo="P6">
         <peso unidad='kg'>7</peso>
         <nombre>Mando</nombre>
+        <lugar edificio="A">
+            <aula>26</aula>
+        </lugar>
+    </producto>
+    <producto codigo="P7">
+        <peso unidad='kg'>4</peso>
+        <nombre>Garrafa</nombre>
+        <lugar edificio="A">
+            <aula>1</aula>
+        </lugar>
+    </producto>
+    <producto codigo="P8">
+        <peso unidad='kg'>20</peso>
+        <nombre>Escultura Romana</nombre>
         <lugar edificio="A">
             <aula>26</aula>
         </lugar>
