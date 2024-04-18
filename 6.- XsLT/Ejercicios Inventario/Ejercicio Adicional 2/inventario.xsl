@@ -2,9 +2,6 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:output method="html"/>
     <xsl:variable name="unidad_peso" select="/inventario/producto/peso/@unidad[../../@codigo='P2']"/>
-    <xsl:variable name="n_prod" select="/inventario/producto">
-        <xsl:number count="producto/peso[@unidad=$unidad_peso]" format="1"/>
-    </xsl:variable>
     <xsl:template match="/">
         <!-- Cuantos productos tienen la misma unidad de peso que P2? -->
         <html>
@@ -13,8 +10,10 @@
                 <title>Ejercicio Adicional Variables</title>
             </head>
             <body>
-                    <h1>Mostrando cantidad de productos que tienen la misma unidad de peso que P2: <xsl:value-of select="$unidad_peso"/></h1>
-                    <p><xsl:value-of select="$n_prod"/></p>     
+                    <h1>Nº de productos con la unidad de peso de P2: <xsl:value-of select="$unidad_peso"/></h1>
+                    <ul>
+                        <xsl:value-of select="count(//producto[peso/@unidad = $unidad_peso])"/>
+                    </ul>
             </body>
         </html>
     </xsl:template>
