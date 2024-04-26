@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="Ejercicio4/cartelera.xsl" type="text/xsl"?>
+<cartelera>
+    <cines>
+        <cine codigo="N101">
+            <nombre>Cinema Friki</nombre>
+            <direccion>Avenida de las películas, 314</direccion>
+            <codigopostal>25687</codigopostal>
+        </cine>
+        <cine codigo="T303">
+            <nombre>SW Cine</nombre>
+            <direccion>Calle Anderson, 101</direccion>
+            <codigopostal>25688</codigopostal>
+        </cine>
+    </cines>
+    <peliculas>
+        <pelicula>
+            <titulo>Encuentros en la tercera fase</titulo>
+            <directores>
+                <director>Steven Spielberg</director>
+            </directores>
+            <reparto>
+                <actor>Richard Dreyfuss</actor>
+                <actor>Teri Garr</actor>
+                <actor>Melinda Dillon</actor>
+            </reparto>
+            <anyo>1977</anyo>
+            <argumento>Una noche, cerca de su casa, Roy observa en el cielo unos misteriosos objetos voladores.</argumento>
+            <proyecciones>
+                <proy_cine codigo="N101">
+                    <sesion>15:00</sesion>
+                    <sesion>01:00</sesion>
+                </proy_cine>
+                <proy_cine codigo="T303">
+                    <sesion>22:00</sesion>
+                </proy_cine>
+            </proyecciones>
+        </pelicula>
+        <pelicula>
+            <titulo>Lo que el viento se llevó</titulo>
+            <directores>
+                <director>Victor Flemming</director>
+                <director>George Cukor</director>
+                <director>Sam Wood</director>
+            </directores>
+            <reparto>
+                <actor>Vivien Leigh</actor>
+                <actor>Clark Gable</actor>
+            </reparto>
+            <anyo>1939</anyo>
+            <proyecciones>
+                <proy_cine codigo="T303">
+                    <sesion>16:00</sesion>
+                </proy_cine>
+            </proyecciones>
+        </pelicula>
+        <pelicula>
+            <titulo>Matrix</titulo>
+            <directores>
+                <director>Lilly Wachowski</director>
+                <director>Lana Wachowski</director>
+            </directores>
+            <reparto>
+                <actor>Keanu Reeves</actor>
+                <actor>Carrie-Ann Moss</actor>
+                <actor>Laurencd Fishburne</actor>
+            </reparto>
+            <anyo>1999</anyo>
+            <argumento>Thomas Anderson es un programador que en su tiempo lobre es Neo, un hacker informático.</argumento>
+            <proyecciones>
+                <proy_cine codigo="N101">
+                    <sesion>12:00</sesion>
+                </proy_cine>
+                <proy_cine codigo="T303">
+                    <sesion>12:00</sesion>
+                </proy_cine>
+            </proyecciones>
+        </pelicula>
+        <pelicula>
+            <titulo>Distrito 9</titulo>
+            <directores>
+                <director>Neill Blomkamp</director>
+            </directores>
+            <reparto>
+                <actor>Sharito Copley</actor>
+            </reparto>
+            <anyo>2009</anyo>
+            <argumento>Una enorme nave espacial llega a Johannesburgo y los alienígenas son encerrados en campos de refugiados.</argumento>
+            <proyecciones>
+                <proy_cine codigo="N101">
+                    <sesion>17:30</sesion>
+                    <sesion>20:00</sesion>
+                    <sesion>23:30</sesion>
+                </proy_cine>
+            </proyecciones>
+        </pelicula>
+    </peliculas>
+</cartelera>
