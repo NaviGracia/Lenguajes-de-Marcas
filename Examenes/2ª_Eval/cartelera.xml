@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="Ejercicio4/cartelera.xsl" type="text/xsl"?>
+<?xml-stylesheet href="Ejercicio1/cartelera.xsl" type="text/xsl"?>
 <cartelera>
     <cines>
         <cine codigo="N101">
