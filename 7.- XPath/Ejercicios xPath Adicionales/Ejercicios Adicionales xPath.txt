@@ -1,0 +1,7 @@
+Módulos de los CFGS, devolver el 2º
+1) //modulo[ciclo=//ciclo[grado='Superior']/@id][2]/nombre
+Módulos relacionados con "aplicaciones web"
+2)
+Módulos de los ciclos anteriores al 2010
+(Contenido del módulo, sin etiqueta modulo)
+3)
