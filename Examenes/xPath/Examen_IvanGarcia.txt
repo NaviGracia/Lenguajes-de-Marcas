@@ -1,0 +1,6 @@
+1) //personaje[nombre = //personaje[nombre = 'Gandalf']/relaciones/relacion/nombre]/descripcion
+2) //personaje[contains(edad, 'Desconocida')]/raza
+3)  Un único paso: //personaje/nombre/text()[contains(../../descripcion, 'mago')]  
+    Dos pasos: //personaje[contains(descripcion, 'mago')]/nombre/text()
+4) //relacion[tipo = 'Aliado' and nombre = //personaje[lugares/lugar = 'Mordor']/nombre]/nombre
+

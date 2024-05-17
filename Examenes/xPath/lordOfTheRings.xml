@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<libro titulo="El Señor de los Anillos">
+    <personajes>
+        <personaje>
+            <nombre>Frodo Bolsón</nombre>
+            <raza>Hobbit</raza>
+            <descripcion>El valiente hobbit que emprende la misión de destruir el Anillo Único.</descripcion>
+            <edad>33</edad>
+            <lugares>
+                <lugar>La Comarca</lugar>
+                <lugar>Bree</lugar>
+                <lugar>Rivendel</lugar>
+                <lugar>Lothlórien</lugar>
+                <lugar>Gondor</lugar>
+                <lugar>Mordor</lugar>
+            </lugares>
+            <relaciones>
+                <relacion>
+                    <nombre>Aragorn</nombre>
+                    <tipo>Amigo</tipo>
+                    <tipo>Protector</tipo>
+                    <tipo>Aliado</tipo>
+                </relacion>
+                <relacion>
+                    <nombre>Gollum</nombre>
+                    <tipo>Rival</tipo>
+                </relacion>
+            </relaciones>
+        </personaje>
+        <personaje>
+            <nombre>Sauron</nombre>
+            <raza>Maia</raza>
+            <descripcion>El Señor Oscuro, antiguo discípulo de Morgoth, busca recuperar el Anillo Único para dominar la Tierra Media.</descripcion>
+            <edad>Desconocida</edad>
+            <lugares>
+                <lugar>Mordor</lugar>
+            </lugares>
+            <relaciones>
+                <relacion>
+                    <nombre>Gollum</nombre>
+                    <tipo>Rival</tipo>
+                </relacion>
+                <relacion>
+                    <nombre>Saruman</nombre>
+                    <tipo>Aliado</tipo>
+                    <tipo>Servidor</tipo>
+                </relacion>
+            </relaciones>
+        </personaje>
+        <personaje>
+            <nombre>Aragorn</nombre>
+            <raza>Hombre</raza>
+            <descripcion>El heredero de Isildur y legítimo Rey de Gondor, hábil guardabosques y guerrero.</descripcion>
+            <edad>87</edad>
+            <lugares>
+                <lugar>Bree</lugar>
+                <lugar>Rivendel</lugar>
+                <lugar>Lothlórien</lugar>
+                <lugar>Gondor</lugar>
+                <lugar>Minas Tirith</lugar>
+                <lugar>Mordor</lugar>
+            </lugares>
+            <relaciones>
+                <relacion>
+                    <nombre>Frodo Bolsón</nombre>
+                    <tipo>Protegido</tipo>
+                    <tipo>Aliado</tipo>
+                </relacion>
+                <relacion>
+                    <nombre>Arwen</nombre>
+                    <tipo>Pareja</tipo>
+                    <tipo>Aliado</tipo>
+                </relacion>
+            </relaciones>
+        </personaje>
+        <personaje>
+            <nombre>Gandalf</nombre>
+            <raza>Istari</raza>
+            <descripcion>Un poderoso mago y líder de la Compañía del Anillo.</descripcion>
+            <edad>Desconocida</edad>
+            <lugares>
+                <lugar>Rivendel</lugar>
+                <lugar>Lothlórien</lugar>
+                <lugar>Moria</lugar>
+                <lugar>Gondor</lugar>
+                <lugar>Minas Tirith</lugar>
+                <lugar>Mordor</lugar>
+            </lugares>
+            <relaciones>
+                <relacion>
+                    <nombre>Frodo Bolsón</nombre>
+                    <tipo>Guía</tipo>
+                    <tipo>Mentor</tipo>
+                    <tipo>Aliado</tipo>
+                </relacion>
+                <relacion>
+                    <nombre>Saruman</nombre>
+                    <tipo>Aliado</tipo>
+                    <tipo>Rival</tipo>
+                </relacion>
+            </relaciones>
+        </personaje>
+        <personaje>
+            <nombre>Gollum</nombre>
+            <raza>Hobbit</raza>
+            <descripcion>Anteriormente conocido como Smeagol, corrompido por el Anillo Único, ahora consumido por su poder.</descripcion>
+            <edad>Desconocida</edad>
+            <lugares>
+                <lugar>Montañas Nubladas</lugar>
+                <lugar>Moria</lugar>
+                <lugar>Mordor</lugar>
+            </lugares>
+            <relaciones>
+                <relacion>
+                    <nombre>Frodo Bolsón</nombre>
+                    <tipo>Rival</tipo>
+                </relacion>
+            </relaciones>
+        </personaje>
+        <personaje>
+            <nombre>Arwen</nombre>
+            <raza>Elfo</raza>
+            <descripcion>Hija de Elrond, amada de Aragorn, y miembro de la casa de Elrond en Rivendel.</descripcion>
+            <edad>Desconocida (varios miles de años)</edad>
+            <lugares>
+                <lugar>Rivendel</lugar>
+                <lugar>Lothlórien</lugar>
+                <lugar>Gondor</lugar>
+            </lugares>
+            <relaciones>
+                <relacion>
+                    <nombre>Aragorn</nombre>
+                    <tipo>Pareja</tipo>
+                    <tipo>Aliado</tipo>
+                </relacion>
+            </relaciones>
+        </personaje>
+        <personaje>
+            <nombre>Galadriel</nombre>
+            <raza>Elfo</raza>
+            <descripcion>La Dama de Lórien, poderosa gobernante élfica y poseedora de uno de los Tres Anillos de Poder.</descripcion>
+            <edad>Desconocida (varios miles de años)</edad>
+            <lugares>
+                <lugar>Lothlórien</lugar>
+            </lugares>
+            <relaciones>
+                <relacion>
+                    <nombre>Gandalf</nombre>
+                    <tipo>Aliado</tipo>
+                </relacion>
+            </relaciones>
+        </personaje>
+        <personaje>
+            <nombre>Saruman</nombre>
+            <raza>Istari</raza>
+            <descripcion>Una vez jefe de la orden de magos, corrompido por su lujuria por el poder y el conocimiento, se convierte en un agente de Sauron.</descripcion>
+            <edad>Desconocida</edad>
+            <lugares>
+                <lugar>Isengard</lugar>
+                <lugar>Rivendel</lugar>
+                <lugar>Lothlórien</lugar>
+                <lugar>Gondor</lugar>
+                <lugar>Minas Tirith</lugar>
+                <lugar>Mordor</lugar>
+            </lugares>
+            <relaciones>
+                <relacion>
+                    <nombre>Gandalf</nombre>
+                    <tipo>Aliado</tipo>
+                    <tipo>Rival</tipo>
+                </relacion>
+            </relaciones>
+        </personaje>
+        <personaje>
+            <nombre>Faramir</nombre>
+            <raza>Hombre</raza>
+            <descripcion>Hermano menor de Boromir, Capitán de Gondor, y mayordomo de Gondor después de la muerte de su padre.</descripcion>
+            <edad>Desconocida</edad>
+            <lugares>
+                <lugar>Gondor</lugar>
+                <lugar>Minas Tirith</lugar>
+            </lugares>
+            <relaciones>
+                <relacion>
+                    <nombre>Frodo Bolsón</nombre>
+                    <tipo>Aliado</tipo>
+                    <tipo>Ayudante</tipo>
+                </relacion>
+                <relacion>
+                    <nombre>Gandalf</nombre>
+                    <tipo>Aliado</tipo>
+                </relacion>
+            </relaciones>
+        </personaje>
+    </personajes>
+    <lugares>
+        <lugar>
+            <nombre>La Comarca</nombre>
+            <descripcion>Una región pacífica habitada principalmente por hobbits, conocida por sus campos verdes y colinas ondulantes.</descripcion>
+        </lugar>
+        <lugar>
+            <nombre>Bree</nombre>
+            <descripcion>Una ciudad ubicada en la encrucijada entre la Comarca y el resto de la Tierra Media, famosa por su posada, El Poney Pisador.</descripcion>
+        </lugar>
+        <lugar>
+            <nombre>Rivendel</nombre>
+            <descripcion>También conocida como Imladris, es la morada de Elrond, un refugio élfico oculto en las montañas, donde se celebró el Concilio de Elrond.</descripcion>
+        </lugar>
+        <lugar>
+            <nombre>Lothlórien</nombre>
+            <descripcion>Un bosque dorado y mágico habitado por los elfos, gobernado por Galadriel y Celeborn, conocido por sus grandes árboles mallorn y sus poderosas defensas.</descripcion>
+        </lugar>
+        <lugar>
+            <nombre>Gondor</nombre>
+            <descripcion>Un reino humano en el sur de la Tierra Media, conocido por su ciudad capital, Minas Tirith, y por ser uno de los últimos bastiones contra la oscuridad de Mordor.</descripcion>
+        </lugar>
+        <lugar>
+            <nombre>Mordor</nombre>
+            <descripcion>La tierra oscura y devastada al este de la Tierra Media, dominada por el Señor Oscuro Sauron, donde se encuentra el Monte del Destino y la torre de Barad-dûr.</descripcion>
+        </lugar>
+        <lugar>
+            <nombre>Minas Tirith</nombre>
+            <descripcion>La ciudad capital de Gondor, construida en siete niveles sobre una colina, conocida por su imponente Muro Blanco y por ser el sitio de la última batalla contra las fuerzas de Sauron.</descripcion>
+        </lugar>
+        <lugar>
+            <nombre>Moria</nombre>
+            <descripcion>Un antiguo reino enano bajo las Montañas Nubladas, famoso por sus minas de mithril y su caída ante el despertar del Balrog.</descripcion>
+        </lugar>
+        <lugar>
+            <nombre>Isengard</nombre>
+            <descripcion>Una región en el valle de Nan Curunír, donde se encuentra la Torre de Orthanc y la fortaleza de Saruman.</descripcion>
+        </lugar>
+        <lugar>
+            <nombre>Montañas Nubladas</nombre>
+            <descripcion>Las Montañas Nubladas son una cadena montañosa en la Tierra Media que albergan antiguas minas enanas, como Moria, que alguna vez fueron prósperas pero cayeron en la oscuridad.</descripcion>
+        </lugar>
+    </lugares>
+    
+</libro>
